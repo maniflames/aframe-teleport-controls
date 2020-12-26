@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="../../dist/aframe-teleport-controls.min.js"></script>
     <script src="../common/shaders/skyGradient.js"></script>
     <script src="https://unpkg.com/aframe-input-mapping-component/dist/aframe-input-mapping-component.min.js"></script>
@@ -20,12 +20,16 @@
       </a-entity>
       <!-- hand controls -->
       <a-entity teleport-controls="startEvents: teleportstart; endEvents: teleportend"
+        laser-controls="hand: right"
+        oculus-go-controls="hand: left"
         vive-controls="hand: left"
         oculus-touch-controls="hand: left"
         microsoft-motion-controls="hand: left"
         daydream-controls="left" gearvr-controls="left">
       </a-entity>
       <a-entity teleport-controls="startEvents: teleportstart; endEvents: teleportend; type: line"
+        laser-controls="hand: right"
+        oculus-go-controls="hand: left"
         vive-controls="hand: right"
         microsoft-motion-controls="hand: right"
         oculus-touch-controls="hand: right"
